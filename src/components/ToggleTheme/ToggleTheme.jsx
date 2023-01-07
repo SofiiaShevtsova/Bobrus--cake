@@ -9,10 +9,10 @@ function ToggleTheme() {
   return (
     <>
       <Button
-        colorScheme="purple"
+        colorScheme="pink"
         onClick={toggleColorMode}
         pos="fixed"
-        top={'25%'}
+        top={'5%'}
         right={'30px'}
         zIndex={2}
       >
