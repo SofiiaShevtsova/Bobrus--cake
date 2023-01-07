@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Bobrus-cake/static/css/main.67f4cf04.css",
-    "main.js": "/Bobrus-cake/static/js/main.f8e2c1b4.js",
+    "main.js": "/Bobrus-cake/static/js/main.ce91978d.js",
     "index.html": "/Bobrus-cake/index.html",
     "main.67f4cf04.css.map": "/Bobrus-cake/static/css/main.67f4cf04.css.map",
-    "main.f8e2c1b4.js.map": "/Bobrus-cake/static/js/main.f8e2c1b4.js.map"
+    "main.ce91978d.js.map": "/Bobrus-cake/static/js/main.ce91978d.js.map"
   },
   "entrypoints": [
     "static/css/main.67f4cf04.css",
-    "static/js/main.f8e2c1b4.js"
+    "static/js/main.ce91978d.js"
   ]
 }
