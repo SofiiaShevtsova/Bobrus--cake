@@ -1,15 +1,6 @@
-// import { Suspense, lazy, useEffect } from 'react';
-import {
-  // Breadcrumb,
-  // BreadcrumbItem,
-  // BreadcrumbLink,
-  // Flex,
-  // Spacer,
-  // Spinner,
-  Box,
-  // Center,
-} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import ToggleTheme from './ToggleTheme/ToggleTheme';
+import Header from './Header/Header';
 
 export const App = () => {
   return (
@@ -21,6 +12,7 @@ export const App = () => {
       fontSize="xs"
       textAlign="center"
     >
+      <Header/>
       <ToggleTheme />
     </Box>
   );
