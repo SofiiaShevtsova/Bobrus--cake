@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/Bobrus-cake/static/css/main.798e016d.css",
-    "main.js": "/Bobrus-cake/static/js/main.da4f2921.js",
+    "main.css": "/Bobrus-cake/static/css/main.840666d3.css",
+    "main.js": "/Bobrus-cake/static/js/main.54663014.js",
     "static/media/cake3.jpg": "/Bobrus-cake/static/media/cake3.bb35a7cabb0cc46b6689.jpg",
     "static/media/cake2.jpg": "/Bobrus-cake/static/media/cake2.fca6d90839a51101f57e.jpg",
-    "static/media/cake12.jpg": "/Bobrus-cake/static/media/cake12.2381fb6592f8c8c3332c.jpg",
     "static/media/cake4.jpg": "/Bobrus-cake/static/media/cake4.a952b75297aaf37ac588.jpg",
     "static/media/cake1.jpg": "/Bobrus-cake/static/media/cake1.30ebf40a07bf5df1250b.jpg",
     "static/media/make-cake.jpg": "/Bobrus-cake/static/media/make-cake.1223c6f7453d49bf5723.jpg",
     "index.html": "/Bobrus-cake/index.html",
-    "main.798e016d.css.map": "/Bobrus-cake/static/css/main.798e016d.css.map",
-    "main.da4f2921.js.map": "/Bobrus-cake/static/js/main.da4f2921.js.map"
+    "main.840666d3.css.map": "/Bobrus-cake/static/css/main.840666d3.css.map",
+    "main.54663014.js.map": "/Bobrus-cake/static/js/main.54663014.js.map"
   },
   "entrypoints": [
-    "static/css/main.798e016d.css",
-    "static/js/main.da4f2921.js"
+    "static/css/main.840666d3.css",
+    "static/js/main.54663014.js"
   ]
 }
