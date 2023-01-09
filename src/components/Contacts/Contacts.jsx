@@ -2,7 +2,7 @@ import { Heading, Wrap, WrapItem, Link, Center } from '@chakra-ui/react';
 
 const Contacts = () => {
   return (
-      <Center gap="20px" p="30px">
+      <Center gap="20px" p="30px" id="contacts">
           <Heading w='30%'>If you have any questions or want to place an order, all our contacts</Heading>
 <Wrap w='70%'>
   <WrapItem bg='red.200'>

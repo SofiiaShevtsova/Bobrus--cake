@@ -3,7 +3,7 @@ import ToggleTheme from './ToggleTheme/ToggleTheme';
 import Header from './Header/Header';
 import About from './About/About';
 import Product from './Product/Product';
-import Reviews from './Reviews/Reviews';
+import { AddFeedback } from './AddFeedback/AddFeedback';
 import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 
@@ -20,7 +20,7 @@ export const App = () => {
       <Header />
       <About />
       <Product />
-      <Reviews/>
+      <AddFeedback/>
       <Contacts />
       <Footer/>
       <ToggleTheme />
