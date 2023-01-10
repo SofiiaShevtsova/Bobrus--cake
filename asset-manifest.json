@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bobrus-cake/static/css/main.e10a97af.css",
-    "main.js": "/Bobrus-cake/static/js/main.9cae8031.js",
+    "main.js": "/Bobrus-cake/static/js/main.91c5512e.js",
     "static/media/cake3.jpg": "/Bobrus-cake/static/media/cake3.bb35a7cabb0cc46b6689.jpg",
     "static/media/cake2.jpg": "/Bobrus-cake/static/media/cake2.fca6d90839a51101f57e.jpg",
     "static/media/cake4.jpg": "/Bobrus-cake/static/media/cake4.a952b75297aaf37ac588.jpg",
@@ -9,10 +9,10 @@
     "static/media/make-cake.jpg": "/Bobrus-cake/static/media/make-cake.1223c6f7453d49bf5723.jpg",
     "index.html": "/Bobrus-cake/index.html",
     "main.e10a97af.css.map": "/Bobrus-cake/static/css/main.e10a97af.css.map",
-    "main.9cae8031.js.map": "/Bobrus-cake/static/js/main.9cae8031.js.map"
+    "main.91c5512e.js.map": "/Bobrus-cake/static/js/main.91c5512e.js.map"
   },
   "entrypoints": [
     "static/css/main.e10a97af.css",
-    "static/js/main.9cae8031.js"
+    "static/js/main.91c5512e.js"
   ]
 }
