@@ -27,3 +27,15 @@ li {
 img {
   display: block;
 }
+
+.swiper-button-next {
+  color: pink;
+}
+
+.swiper-button-prev {
+  color: pink;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: pink;
+}

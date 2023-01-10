@@ -1,13 +1,36 @@
 import { Box } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { addFeedback, getFeedback } from 'service/feedback';
 import ToggleTheme from './ToggleTheme/ToggleTheme';
 import Header from './Header/Header';
 import About from './About/About';
 import Product from './Product/Product';
-import { AddFeedback } from './AddFeedback/AddFeedback';
+import FeedbackList from './FeedbackList/FeedbackList';
+import AddFeedback from './AddFeedback/AddFeedback';
 import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 
 export const App = () => {
+  const [feedbackList, setFeedbackList] = useState([])
+  
+const addFeedbackItem = (item) => {
+  addFeedback(item)
+  }
+  
+   useEffect(() => {
+    const getFeedbackPI = async () => {
+      try {
+        const {data} = await getFeedback();
+        if (data.length !== feedbackList.length) {
+               setFeedbackList(()=> [...data])
+        }
+      } catch (error) {
+      } 
+    };
+
+    getFeedbackPI();
+  }, [feedbackList]);
+
   return (
     <Box
       w="100%"
@@ -15,12 +38,13 @@ export const App = () => {
       letterSpacing="wide"
       fontSize="xs"
       textAlign="center"
-      backgroundColor='rgba(245, 42, 137, 0.3)'
+      backgroundColor="rgba(246, 135, 179, 0.534)"
     >
       <Header />
       <About />
       <Product />
-      <AddFeedback/>
+      <FeedbackList feedbackList={ feedbackList} />
+      <AddFeedback addFeedback={addFeedbackItem} />
       <Contacts />
       <Footer/>
       <ToggleTheme />

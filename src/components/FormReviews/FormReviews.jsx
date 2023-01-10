@@ -10,19 +10,33 @@ import {
   Textarea,
 } from '@chakra-ui/react';
 
-const FormReviews = () => {
+const FormReviews = ({addFeedback}) => {
   const formik = useFormik({
     initialValues: {
       name: '',
       feedback: '',
     },
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values, actions) => {
+      actions.setSubmitting(false);
+      actions.resetForm();
+      if (values.name.trim() === '' || values.feedback.trim() === '') {
+        return;
+      }
+      addFeedback(values)
     },
   });
   return (
-    <Flex bg="gray.100" align="center" justify="center">
-      <Box bg="white" p={6} rounded="md">
+    <Flex
+      align="center"
+      justify="center"
+      p="20px"
+    >
+      <Box
+        bg="white"
+        p={6}
+        rounded="md"
+        backgroundColor="rgba(246, 135, 179, 0.534)"
+      >
         <form onSubmit={formik.handleSubmit}>
           <VStack spacing={4} align="flex-start" mb="10px">
             <FormControl>
@@ -31,7 +45,7 @@ const FormReviews = () => {
                 w="600px"
                 name="name"
                 type="text"
-                variant="filled"
+                variant="outline"
                 onChange={formik.handleChange}
                 value={formik.values.name}
               />
@@ -41,7 +55,7 @@ const FormReviews = () => {
               <Textarea
                 name="feedback"
                 type="text"
-                variant="filled"
+                variant="outline"
                 size="sm"
                 resize="none"
                 onChange={formik.handleChange}
@@ -49,7 +63,7 @@ const FormReviews = () => {
               />
             </FormControl>
           </VStack>
-          <Button type="submit" colorScheme="pink">
+          <Button type="submit" colorScheme="pink" color="inherit">
             Add fedback
           </Button>
         </form>

@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@chakra-ui/icons';
 
 const Navigate = () => {
   return (
-    <Breadcrumb spacing='5px' fontSize={{ base: '10px', md: '2xl'}} color='rgba(210, 10, 90, 0.6)' separator={<ArrowRightIcon color='pink.500' />}>
+    <Breadcrumb spacing='5px' fontSize={{ base: '10px', md: '2xl'}} color="white" separator={<ArrowRightIcon color='pink.300' />}>
       <BreadcrumbItem>
         <BreadcrumbLink href="/">Bobrus-cake</BreadcrumbLink>
       </BreadcrumbItem>

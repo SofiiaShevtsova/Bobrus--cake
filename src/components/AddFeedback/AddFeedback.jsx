@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import FormReviews from 'components/FormReviews/FormReviews';
 
-export const AddFeedback = () => {
+const AddFeedback = ({addFeedback}) => {
   return (
     <Accordion defaultIndex={[1]} allowToggle colorScheme='pink'>
       <AccordionItem >
@@ -26,9 +26,11 @@ export const AddFeedback = () => {
           </AccordionButton>
         </h2>
         <AccordionPanel>
-          <FormReviews/>
+          <FormReviews addFeedback={addFeedback}/>
         </AccordionPanel>
       </AccordionItem>
     </Accordion>
   );
 };
+
+export default AddFeedback
