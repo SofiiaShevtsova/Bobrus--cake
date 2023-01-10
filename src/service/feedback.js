@@ -6,8 +6,7 @@ export const getFeedback = async () => {
       'https://63af5dd2cb0f90e514726ce0.mockapi.io/contacts/feedback'
     );
     return data;
-  } catch (error) {
-  }
+  } catch (error) {}
 };
 
 export const addFeedback = async item => {
@@ -16,6 +15,5 @@ export const addFeedback = async item => {
       'https://63af5dd2cb0f90e514726ce0.mockapi.io/contacts/feedback',
       item
     );
-  } catch (error) {
-  }
+  } catch (error) {}
 };
