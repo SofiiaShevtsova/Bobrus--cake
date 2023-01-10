@@ -9,15 +9,15 @@ const Navigate = () => {
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="#about">About us</BreadcrumbLink>
-      </BreadcrumbItem>
-
-      <BreadcrumbItem>
         <BreadcrumbLink href="#product">Product</BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="contacts">Contacts</BreadcrumbLink>
+        <BreadcrumbLink href="#reviews">Reviews</BreadcrumbLink>
+      </BreadcrumbItem>
+
+      <BreadcrumbItem>
+        <BreadcrumbLink href="#contacts">Contacts</BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>
   );

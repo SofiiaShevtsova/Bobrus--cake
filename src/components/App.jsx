@@ -11,24 +11,23 @@ import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 
 export const App = () => {
-  const [feedbackList, setFeedbackList] = useState([])
-  
-const addFeedbackItem = (item) => {
-  addFeedback(item)
-  }
-  
-   useEffect(() => {
-    const getFeedbackPI = async () => {
-      try {
-        const {data} = await getFeedback();
-        if (data.length !== feedbackList.length) {
-               setFeedbackList(()=> [...data])
-        }
-      } catch (error) {
-      } 
-    };
+  const [feedbackList, setFeedbackList] = useState([]);
 
-    getFeedbackPI();
+  const addFeedbackItem = item => {
+    addFeedback(item);
+    setFeedbackList(() => [...feedbackList, item]);
+  };
+
+  useEffect(() => {
+    const getFeedbackAPI = async () => {
+      try {
+        const { data } = await getFeedback();
+        if (data.length !== feedbackList.length) {
+          setFeedbackList(() => [...data]);
+        }
+      } catch (error) {}
+    };
+    getFeedbackAPI();
   }, [feedbackList]);
 
   return (
@@ -43,10 +42,10 @@ const addFeedbackItem = (item) => {
       <Header />
       <About />
       <Product />
-      <FeedbackList feedbackList={ feedbackList} />
+      <FeedbackList feedbackList={feedbackList} />
       <AddFeedback addFeedback={addFeedbackItem} />
       <Contacts />
-      <Footer/>
+      <Footer />
       <ToggleTheme />
     </Box>
   );

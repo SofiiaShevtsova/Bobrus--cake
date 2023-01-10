@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 const FeedbackList = ({ feedbackList }) => {
   return (<>
-    <Center p="20px" display={{base: 'none', md:"flex"}}>
+    <Center p="20px" display={{base: 'none', md:"flex"}} id='reviews'>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={30}
@@ -21,7 +21,7 @@ const FeedbackList = ({ feedbackList }) => {
           return (
             <SwiperSlide key={el.id}>
               <Box
-                w={{base: '200px', lg: '300px'}}
+                w={{base: '200px', lg: '350px'}}
                 h="300px"
                 p="20px"
                 bgColor="pink.500"
