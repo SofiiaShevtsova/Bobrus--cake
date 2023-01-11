@@ -38,7 +38,7 @@ const FeedbackList = ({ feedbackList }) => {
         })}
       </Swiper>
       </Center>
-      <Center p='50px' display={{base: 'flex', md:"none"}}>
+      <Center p='50px' display={{base: 'flex', md:"none"}} id='reviews'>
 <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={30}
