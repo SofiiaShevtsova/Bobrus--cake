@@ -24,7 +24,7 @@ const FeedbackList = ({ feedbackList }) => {
                 w={{base: '200px', lg: '350px'}}
                 h="300px"
                 p="20px"
-                bgColor="pink.500"
+                bgColor="rgba(255, 0, 119, 0.3)"
                 textAlign="start"
                 borderRadius="20px"
               >
@@ -55,7 +55,7 @@ const FeedbackList = ({ feedbackList }) => {
                 w='100%'
                 h="300px"
                 p="20px"
-                bgColor="pink.500"
+                bgColor="rgba(255, 0, 119, 0.3)"
                 textAlign="start"
                 borderRadius="20px"
               >

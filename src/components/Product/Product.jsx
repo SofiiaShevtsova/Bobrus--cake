@@ -56,7 +56,7 @@ const Product = () => {
               <Image
                 fit="cover"
                 src={cake1}
-                boxSize="300px"
+                boxSize="400px"
                 borderRadius="10px"
               />
             </Center>
@@ -68,7 +68,7 @@ const Product = () => {
               <Image
                 fit="cover"
                 src={cake2}
-                boxSize="300px"
+                boxSize="400px"
                 borderRadius="10px"
               />
             </Center>
@@ -102,7 +102,7 @@ const Product = () => {
               <Image
                 fit="cover"
                 src={cake3}
-                boxSize="300px"
+                boxSize="400px"
                 borderRadius="10px"
               />
             </Center>
@@ -114,7 +114,7 @@ const Product = () => {
               <Image
                 fit="cover"
                 src={cake4}
-                boxSize="300px"
+                boxSize="400px"
                 borderRadius="10px"
               />
             </Center>
