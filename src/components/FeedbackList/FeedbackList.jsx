@@ -17,16 +17,17 @@ const FeedbackList = ({ feedbackList }) => {
         onSwiper={swiper => {}}
         onSlideChange={() => {}}
       >
-        {feedbackList.length>0 && feedbackList.map(el => {
+        {feedbackList.length>0 && feedbackList.reverse().map(el => {
           return (
             <SwiperSlide key={el.id}>
               <Box
-                w={{base: '200px', lg: '350px'}}
+                w={{base: '250px', lg: '330px'}}
                 h="300px"
                 p="20px"
-                bgColor="rgba(255, 0, 119, 0.3)"
+                bgColor="rgba(119, 11, 92, 0.3)"
                 textAlign="start"
                 borderRadius="20px"
+                boxShadow='27px 0px 13px 2px rgba(72, 30, 84, 0.2);'
               >
                 <Heading mb="10px" fontSize={{base:'18px', lg: '28px'}}>
                   {el.name}

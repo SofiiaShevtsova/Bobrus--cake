@@ -29,13 +29,13 @@ img {
 }
 
 .swiper-button-next {
-  color: pink;
+  color: rgb(119, 11, 92);
 }
 
 .swiper-button-prev {
-  color: pink;
+  color: rgb(119, 11, 92);
 }
 
 .swiper-pagination-bullet-active {
-  background-color: pink;
+  background-color: rgb(119, 11, 92);
 }
