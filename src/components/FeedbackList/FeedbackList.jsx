@@ -32,6 +32,7 @@ const FeedbackList = ({ feedbackList }) => {
                 <Heading mb="10px" fontSize={{base:'18px', lg: '28px'}}>
                   {el.name}
                 </Heading>
+                <p>{el.date}</p>
                 <Text fontSize={{base:'16px', lg: '20px'}}>{el.feedback}</Text>
               </Box>
             </SwiperSlide>
@@ -49,7 +50,7 @@ const FeedbackList = ({ feedbackList }) => {
         onSwiper={swiper => {}}
         onSlideChange={() => {}}
       >
-        {feedbackList.length>0 && feedbackList.map(el => {
+        {feedbackList.length>0 && feedbackList.reverse().map(el => {
           return (
             <SwiperSlide key={el.id}>
               <Box
@@ -63,6 +64,7 @@ const FeedbackList = ({ feedbackList }) => {
                 <Heading mb="10px" fontSize={{base:'18px', lg: '28px'}}>
                   {el.name}
                 </Heading>
+                <p>{el.date}</p>
                 <Text fontSize={{base:'16px', lg: '20px'}}>{el.feedback}</Text>
               </Box>
             </SwiperSlide>

@@ -10,10 +10,11 @@ export const getFeedback = async () => {
 };
 
 export const addFeedback = async item => {
+  const feedbackItem = { ...item, date: new Date().toDateString() }
   try {
     await axios.post(
       'https://63af5dd2cb0f90e514726ce0.mockapi.io/contacts/feedback',
-      item
+      feedbackItem
     );
   } catch (error) {}
 };
